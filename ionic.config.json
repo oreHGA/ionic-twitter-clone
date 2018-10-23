@@ -1,0 +1,7 @@
+{
+  "name": "twi-clone",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
