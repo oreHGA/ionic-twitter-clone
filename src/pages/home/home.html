@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Twitter Clone
+      Social app w online presence
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -10,12 +10,8 @@
   <div class="compose-tweet-area">
     <!-- This div will house the tweet area for your tweet -->
     <ion-textarea class="tweet-compose" placeholder="Tweet something...."></ion-textarea>
-    <button ion-button round class="tweet-post">Tweet</button>
+    <button ion-button class="tweet-post">Tweet</button>
   </div>
-
-  <h5>Your Timeline</h5>
-  <hr>
-
   <div>
     <!-- This is where your sample tweets will belong -->
     <div class="single-tweet">
@@ -25,6 +21,7 @@
             <img src="https://avatars.io/platform/userId" alt="">
           </ion-avatar>
           <h2>Daddy Won</h2>
+          <p>@daddywon</p>
         </ion-item>
 
         <ion-card-content>
@@ -35,13 +32,13 @@
           <ion-col>
             <button ion-button ion-start clear small color="danger">
               <ion-icon name="heart"></ion-icon>
-              <div>12 likes</div>
+              <div>&nbsp;12 likes</div>
             </button>
           </ion-col>
           <ion-col>
             <button ion-button ion-start clear small>
               <ion-icon name="repeat"></ion-icon>
-              <div>40 retweets</div>
+              <div>&nbsp;40 retweets</div>
             </button>
           </ion-col>
           <!-- <ion-col><button></button></ion-col> -->
