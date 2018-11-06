@@ -1,14 +1,52 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic Twitter Clone
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="compose-tweet-area">
+    <!-- This div will house the tweet area for your tweet -->
+    <ion-textarea class="tweet-compose" placeholder="Tweet something...."></ion-textarea>
+    <button ion-button round class="tweet-post">Tweet</button>
+  </div>
+
+  <h5>Your Timeline</h5>
+  <hr>
+
+  <div>
+    <!-- This is where your sample tweets will belong -->
+    <div class="single-tweet">
+      <ion-card no-padding>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="https://avatars.io/platform/userId" alt="">
+          </ion-avatar>
+          <h2>Daddy Won</h2>
+        </ion-item>
+
+        <ion-card-content>
+          <p>You can catch me on the express</p>
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button ion-start clear small color="danger">
+              <ion-icon name="heart"></ion-icon>
+              <div>12 likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button ion-start clear small>
+              <ion-icon name="repeat"></ion-icon>
+              <div>40 retweets</div>
+            </button>
+          </ion-col>
+          <!-- <ion-col><button></button></ion-col> -->
+        </ion-row>
+      </ion-card>
+    </div>
+  </div>
 </ion-content>
