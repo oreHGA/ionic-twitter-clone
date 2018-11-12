@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend server for simple social application",
+  "main": "server.js",
+  "author": "Ore Ogundipe",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pusher": "^2.1.3",
+    "sqlite3": "^4.0.4"
+  }
+}

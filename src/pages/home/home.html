@@ -1,47 +1,52 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Social app w online presence
+    <ion-title style="text-align: center">
+      Let's Go Social
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <div class="compose-tweet-area">
-    <!-- This div will house the tweet area for your tweet -->
-    <ion-textarea class="tweet-compose" placeholder="Tweet something...."></ion-textarea>
-    <button ion-button class="tweet-post">Tweet</button>
-  </div>
+  <form (ngSubmit)="submitPost()">
+    <div class="compose-post-area">
+      <ion-textarea class="post-compose" placeholder="Post something...." [(ngModel)]="post.content" name="content"></ion-textarea>
+      <button ion-button round class="tweet-post" type="submit">POST</button>
+    </div>
+  </form>
   <div>
-    <!-- This is where your sample tweets will belong -->
-    <div class="single-tweet">
-      <ion-card no-padding>
+    <ion-card>
+      <ion-item>
+        <h3>Hi <i>@{{ current_user }}</i> </h3>
+        <h3>Friends Online: {{ get_users_online() }}</h3>
+      </ion-item>
+    </ion-card>
+
+    <div *ngFor="let post of post_list">
+      <ion-card>
         <ion-item>
           <ion-avatar item-start>
-            <img src="https://avatars.io/platform/userId" alt="">
+            <img src="https://api.adorable.io/avatars/100/avatar.png" alt="">
           </ion-avatar>
-          <h2>Daddy Won</h2>
-          <p>@daddywon</p>
+          <p>@{{ post.username }} <i>{{ isOnline(post.username) }} </i></p>
         </ion-item>
 
         <ion-card-content>
-          <p>You can catch me on the express</p>
+          <p>{{ post.content }}</p>
         </ion-card-content>
 
-        <ion-row>
-          <ion-col>
-            <button ion-button ion-start clear small color="danger">
-              <ion-icon name="heart"></ion-icon>
-              <div>&nbsp;12 likes</div>
-            </button>
-          </ion-col>
+        <ion-row class="icons">
           <ion-col>
             <button ion-button ion-start clear small>
               <ion-icon name="repeat"></ion-icon>
-              <div>&nbsp;40 retweets</div>
+              <div>&nbsp;932 reposts</div>
             </button>
           </ion-col>
-          <!-- <ion-col><button></button></ion-col> -->
+          <ion-col>
+            <button ion-button ion-start clear small color="danger">
+              <ion-icon name="heart"></ion-icon>
+              <div>&nbsp;12k likes</div>
+            </button>
+          </ion-col>
         </ion-row>
       </ion-card>
     </div>
