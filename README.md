@@ -2,6 +2,8 @@
 
 ![Application Demo](./demo/demo.gif)
 
+[Link to Tutorial](https://pusher.com/tutorials/social-online-presence-ionic)
+
 ## Prerequisite
 - [Ionic](https://ionicframework.com) installed on your machine, you can read up on how to do that here [] add link
 - [NodeJS](https://nodejs.org) installed on your machine
