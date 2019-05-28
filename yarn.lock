@@ -3729,9 +3729,9 @@ punycode@^1.2.4, punycode@^1.3.2, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
-pusher-js@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-4.3.1.tgz#ca0ecc09cd78ffb836f65031b9ab69244509d091"
+pusher-js@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-4.4.0.tgz#c52e758c418f8ff9b3221b22291865ffbbc56e32"
   dependencies:
     faye-websocket "0.9.4"
     tweetnacl "^1.0.0"
